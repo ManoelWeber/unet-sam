@@ -17,6 +17,21 @@ The repository includes three main scripts:
 * train_unet.py: trains a U-Net model using the masks generated in the previous step;
 * unet_sam.py: applies the hybrid U-Net + SAM pipeline, where U-Net generates a preliminary wear region and SAM refines the final segmentation.
 
+## Auxiliary Scripts
+In addition to the main pipeline scripts, this repository also includes auxiliary scripts used for manual annotation, metric calculation, statistical analysis, and result visualization. These scripts are not required to run the core U-Net + SAM segmentation pipeline, but they were used to support the evaluation and presentation of the results.
+The auxiliary scripts include:
+
+* manual.py: provides an interactive interface for manually annotating wear regions and saving binary reference masks;
+* metricas.py: calculates complete segmentation and geometric metrics, including IoU, precision, recall, F1-Score, area difference, VB difference, and Hausdorff Distance;
+* iou.py: calculates IoU values between reference masks and predicted masks;
+* boxplot.py: generates boxplots and statistical summaries from the metric results;
+* plot_res.py: creates visual comparison images showing the contours of manual and predicted masks;
+* mann-whitney.py: performs the Mann-Whitney statistical test used to compare VB percentage errors between wear magnitude groups.
+
+These scripts are intended for post-processing and analysis after the segmentation masks have been generated. Therefore, they depend on the outputs produced by the main scripts and on the availability of reference masks. They can be used to reproduce the quantitative metrics, figures, and statistical analyses reported in the study.
+
+
+
 ## Pipeline Overview
 
 The workflow is organized into three main stages.
@@ -222,6 +237,10 @@ The pipeline generates binary segmentation masks and visual overlays that can be
 * Recall;
 * absolute percentage difference in segmented area;
 * absolute percentage difference in flank wear width (VB).
+
+
+
+
 
 ## License
 
