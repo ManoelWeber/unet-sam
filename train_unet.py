@@ -10,6 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 # Importação da nova biblioteca
 import segmentation_models_pytorch as smp
 
+#Foi feito o uso de IA generativa neste código
 
 # ============================================================
 # CONFIGURAÇÕES
