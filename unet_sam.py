@@ -6,6 +6,7 @@ import torch.nn as nn
 from segment_anything import sam_model_registry, SamPredictor
 import segmentation_models_pytorch as smp
 
+#Foi feito o uso de IA generativa neste código
 
 # ============================================================
 # CONFIGURAÇÕES
