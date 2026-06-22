@@ -9,6 +9,7 @@ from segment_anything import sam_model_registry, SamPredictor
 # ============================================================
 # 1. CONFIGURAÇÕES PRINCIPAIS DO PROJETO
 # ============================================================
+#Foi feito o uso de IA generativa neste código
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
