@@ -4,6 +4,11 @@ This repository contains the main scripts used for cutting tool wear segmentatio
 
 The pipeline was developed to support the automatic generation of segmentation masks and to reduce the need for manual prompt definition during the use of SAM.
 
+***
+Disclaimer: Generative AI tools were used as support during the development and refinement of parts of the code. 
+All methodological decisions, experiments, and result interpretation were conducted and reviewed by the author.
+***
+
 ## Repository Description
 
 The repository includes three main scripts:
